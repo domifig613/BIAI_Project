@@ -28,7 +28,7 @@ def trainingData(data_dir):
         for img in os.listdir(path):
             try:
                 img_arr = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
-                resized_arr = cv2.resize(img_arr, (image_size, image_size)) # Reshaping images to preferred size
+                resized_arr = cv2.resize(img_arr, (image_size, image_size))
                 data.append([resized_arr, class_num])
             except Exception as e:
                 print(e)

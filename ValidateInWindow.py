@@ -71,7 +71,6 @@ model = tf.keras.models.load_model('model')
 batch_holder = np.zeros((1, height, width, 3))
 
 
-###########################################################################
 def loadPicture():
     global filename
     win.filename = filedialog.askopenfilename(initialdir="/", title="Select file",
